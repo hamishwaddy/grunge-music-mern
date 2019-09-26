@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "01 - Run Mongod",
+      "type": "shell",
+      "command": "./scripts/setup-mongod.sh",
+    },
+    {
+      "label": "02 - Populate Mongod",
+      "type": "shell",
+      "command": "./scripts/build-first-mongo.sh",
+      "dependsOn" : ["01 - Run Mongod"]
+    },
+    {
+      "label": "03 - Run Express",
+      "type": "shell",
+      "command": "./scripts/setup-express.sh",
+      "dependsOn" : ["02 - Populate Mongod"]
+    },
+    {
+      "label": "04 - Run React",
+      "type": "shell",
+      "command": "./scripts/setup-react.sh",
+      "dependsOn" : ["03 - Run Express"]
+    },
+    {
+      "label": "RUN APPLICATION FOR THE FIRST TIME",
+      "type": "shell",
+      "dependsOn" : ["04 - Run React"]
+    },
+    {
+      "label": "START THE APPLICATION",
+      "type": "shell",
+      "command": "./scripts/start-everything.sh",
+    },
+    {
+      "label": "STOP THE APPLICATION",
+      "type": "shell",
+      "command": "./scripts/stop-everything.sh"
+    },
+    {
+      "label": "CLEAN THE APPLICATION",
+      "type": "shell",
+      "command": "./scripts/clean-everything.sh",
+    }
+  ]
+}

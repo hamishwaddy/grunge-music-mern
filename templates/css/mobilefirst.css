@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat:200,400&display=swap');
+
+/* Font families
+font-family: 'Bungee', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #281c2c;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.brand-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 20vw;
+}
+
+.top-5-albums {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  padding-left: 100px;
+}
+
+.top-5-albums img {
+  margin-right: 30px;
+  height: 15vh;
+  width: 15vh;
+}
+
+.my-btn {
+  font-family: 'Bungee', cursive;
+  text-align: center;
+  font-size: 9rem;
+  width: 20vw;
+  color: #f9eee2;
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: #464980;
+}
+
+.buttons-time-container {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: absolute;
+  z-index: 2;
+  bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.date-time {
+  font-family: 'Montserrat', sans-serif;
+  color: #f9eee2;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in {
+  color: #f9eee2;
+  font-size: 4rem;
+  text-align: right;
+}
+
+.time {
+  font-size: 7rem;
+}
+
+.date {
+  font-size: 3rem;
+}
+
+/* 
+Template One Styles 
+*/
+
+.panel {
+  background-color: #f9eee2;
+  width: 90vw;
+  height: 70vh;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  left: 150px;
+  /* margin-left: -250px; */
+  top: 10px;
+  z-index: 1;
+  display: flex;
+}
+
+.panel-heading {
+  font-family: 'Bungee', cursive;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.top {
+  position: relative;
+  padding-top: 25px;
+}
+
+.close-icon {
+  font-size: 3rem;
+  color: #464980;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.search {
+  display: flex;
+  align-self: center;
+}
+
+form.search input[type='text'] {
+  padding-left: 20px;
+  font-size: 2rem;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  border: 1px solid #281c2c;
+}
+
+.album-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.albums-row {
+  margin-bottom: 10px;
+}
+
+.album-btn {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 40vw;
+  background-color: #281c2c;
+}
+
+.album-art {
+  width: 156px;
+  height: auto;
+  padding: 5px;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 75%;
+  align-self: center;
+}
+
+.album-info h4,
+h5 {
+  color: #f9eee2;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 5px;
+}
+
+.play-btn {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 10%;
+}
+
+.play-btn i {
+  font-size: 2.5rem;
+  color: #464980;
+}
+
+.play-btn i:hover {
+  color: #f9eee2;
+}
+
+.pagination {
+  margin-top: 25px;
+}
+
+.pagination i {
+  font-size: 3rem;
+  color: #464980;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* 
+Template Two Styles 
+*/
+
+.artist-pic {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.artist-name {
+  font-family: 'Bungee', cursive;
+  font-size: 8rem;
+  color: #281c2c;
+  margin-bottom: 50px;
+}
+
+.artist-bio {
+  font-family: 'Montserrat', sans-serif;
+  color: #281c2c;
+  height: 250px;
+  overflow: auto;
+}
+
+.other-albums-by-artist {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.other-albums-by-artist h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #281c2c;
+}
+
+.other-albums-by-artist img {
+  width: 196px;
+  height: auto;
+  margin-right: 16px;
+  margin-bottom: 100px;
+}
+
+button.edit {
+  width: 280px;
+  height: auto;
+  background-color: #281c2c;
+  color: #f9eee2;
+  font-size: 3rem;
+  padding: 16px;
+  margin-right: 16px;
+  font-family: 'Bungee', cursive;
+}
+
+button.delete {
+  width: 280px;
+  height: auto;
+  border: 1px solid #281c2c;
+  color: #281c2c;
+  background-color: #f9eee2;
+  font-size: 3rem;
+  padding: 16px;
+  margin-right: 16px;
+  font-family: 'Bungee', cursive;
+}
+
+/* 
+Template Three Styles 
+*/
+.login-panel {
+  background-color: #f9eee2;
+  width: 50vw;
+  height: 70vh;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  left: 700px;
+  top: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+form.login-form [type='email'] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f9eee2;
+  background-color: #281c2c;
+  margin-bottom: 50px;
+  border: 1px solid #281c2c;
+}
+
+form.login-form [type='password'] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f9eee2;
+  background-color: #281c2c;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+button.submit {
+  width: 400px;
+  height: auto;
+  background-color: #281c2c;
+  color: #f9eee2;
+  font-size: 3rem;
+  padding: 16px;
+  font-family: 'Bungee', cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+p.message {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
