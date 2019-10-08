@@ -1,3 +1,12 @@
+.body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Preset CSS styling
+
 .App {
   text-align: center;
 }
@@ -17,17 +26,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
