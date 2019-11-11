@@ -1,0 +1,11 @@
+.CloseWindow {
+  text-align: right;
+}
+
+.CloseWindow i {
+  cursor: pointer;
+}
+
+.CloseWindow i:hover {
+  transform: scale(1.02);
+}

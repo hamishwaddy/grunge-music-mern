@@ -1,0 +1,9 @@
+.ButtonDelete button {
+  width: 96px;
+  height: 32px;
+  border: 1px solid #281c2c;
+  color: #281c2c;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}

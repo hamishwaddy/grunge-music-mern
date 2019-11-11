@@ -1,0 +1,25 @@
+.AlbumCard {
+  display: flex;
+  flex: 1;
+  background-color: #281c2c;
+  color: #f9eee2;
+  width: 100%;
+  height: auto;
+  padding-right: 16px;
+}
+
+img {
+  max-width: 72;
+  max-height: 72px;
+  background-size: cover;
+}
+
+.AlbumContent {
+  margin-left: 10px;
+  padding-top: 5px;
+  flex: 1;
+}
+
+.AlbumCard:hover {
+  transform: scale(1.02);
+}

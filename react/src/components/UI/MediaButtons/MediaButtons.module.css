@@ -1,0 +1,9 @@
+.MediaButtons {
+  border: 1px solid black;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: center;
+  padding-left: 56px;
+  padding-right: 56px;
+}

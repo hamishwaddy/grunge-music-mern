@@ -1,0 +1,16 @@
+.ButtonChunky {
+  width: 100%;
+  font-family: 'Bungee', cursive;
+  font-size: 4rem;
+  color: #f9eee2;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+
+  background-color: transparent;
+  border: none;
+}
+
+.ButtonChunky:hover {
+  color: #464980;
+}

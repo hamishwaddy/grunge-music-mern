@@ -1,0 +1,110 @@
+.ButtonBar {
+  margin: 0;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+
+  top: 500px;
+}
+
+.Buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .ButtonBar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 48px;
+    position: absolute;
+    bottom: 8vh;
+    width: 100%;
+  }
+
+  .Buttons {
+    padding: 0 12px;
+    display: flex;
+    flex: 30%;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .LoginDateTime {
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    color: #f9eee2;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+  }
+
+  .Login {
+    font-size: 1.5rem;
+  }
+
+  .Time {
+    font-size: 3rem;
+  }
+
+  ._Date {
+    font-size: 1rem;
+    font-family: 'bungee', sans-serif;
+  }
+}
+
+@media (min-width: 1101px) {
+  .ButtonBar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 48px;
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  .Buttons {
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    flex: 35%;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .LoginDateTime {
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    color: #f9eee2;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+  }
+
+  .Login {
+    font-size: 2rem;
+  }
+
+  .Time {
+    font-size: 4rem;
+  }
+
+  ._Date {
+    font-size: 2rem;
+    font-family: 'bungee', sans-serif;
+  }
+}
+
+@media (max-width: 500px) {
+  .ButtonBar {
+    display: none;
+  }
+}

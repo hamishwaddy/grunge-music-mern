@@ -1,0 +1,13 @@
+.ButtonEdit button {
+  width: 96px;
+  height: 32px;
+  background: #281c2c;
+  color: #f9eee2;
+  cursor: pointer;
+  outline: none;
+  border: #281c2c;
+}
+
+button:hover {
+  transform: scale(1.02);
+}

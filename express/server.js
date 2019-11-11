@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const morgan = require('morgan');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5002;
 
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
@@ -25,7 +25,7 @@ app.use('/api/albums', albumRoutes);
 app.use('/api/artists', artistRoutes);
 app.use('/api/users', userRoutes);
 
-const db = require('./config/keys').MONGO_ATLAS_URL;
+const db = require('./config/keys').mongoURI;
 
 mongoose.connect(db, { useNewUrlParser: true })
   .then(function () {

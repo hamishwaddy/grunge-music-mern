@@ -1,0 +1,9 @@
+1. In the artist/pages component, check if there is an id
+
+2. add a button using the hasId state
+
+3. show form when the button is clicked
+
+4. use fetch / post method to submit the data
+
+5. new data is shown on the component

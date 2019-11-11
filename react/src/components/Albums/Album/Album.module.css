@@ -1,0 +1,18 @@
+.Album {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+img {
+  background-size: cover;
+}
+
+.Album:hover,
+.Album:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -109,3 +109,59 @@ exports.users_delete = (req, res, next) => {
       });
     })
 }
+
+exports.users_get_all = (req, res, next) => {
+  User.find()
+    .select('name password')
+    // .populate('artist', 'name bio')
+    .exec()
+    .then(docs => {
+      const response = {
+        count: docs.length,
+        user: docs.map(doc => {
+          return {
+            _id: doc._id,
+            name: doc.name,
+            password: doc.password,
+            request: {
+              type: 'GET',
+              url: 'http://localhost:3000/user/' + doc._id
+            }
+          };
+        })
+      };
+      res.status(200).json(response);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json({
+        error: err
+      });
+    })
+}
+
+exports.users_get_user = (req, res, next) => {
+  const id = req.params.userId;
+  User.findById(id)
+    .select('name email password isAdmin')
+    // .populate('artist', 'name bio')
+    .exec()
+    .then(doc => {
+      console.log(doc);
+      if (doc) {
+        res.status(200).json({
+          user: doc,
+          request: {
+            type: 'GET',
+            url: 'http://localhost:3000/users'
+          }
+        });
+      } else {
+        res.status(404).json({ message: 'Not a valid user ID' })
+      }
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json({ error: err });
+    })
+}
