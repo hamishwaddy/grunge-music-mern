@@ -57,9 +57,7 @@ class Layout extends Component {
         <SideDrawer
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler} />
-        <section style={{ height: '66vh', backgroundColor: 'gray', verticalAlign: 'middle' }}>
-          <HeroImage />
-        </section>
+        <HeroImage />
         <TopFiveAlbums />
         <ButtonBar />
         {(this.state.hasId) ?

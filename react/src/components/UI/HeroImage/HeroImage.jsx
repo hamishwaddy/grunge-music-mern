@@ -6,7 +6,7 @@ import classes from './HeroImage.module.css';
 const heroImage = (props) => {
   return (
     <div className={classes.HeroImage}>
-      <img src={hero} alt="AlbumArt" />
+      <img src={hero} alt="HeroImage" />
     </div>
   )
 };

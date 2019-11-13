@@ -1,11 +1,9 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 import classes from './AddAlbum.module.css'
 // import Backdrop from '../../UI/Backdrop/Backdrop'
 // import PageHeader from '../../UI/PageHeader/PageHeader'
 
-const uuidv4 = require('uuid/v4');
 
 const PostToDB = (data) => {
 
